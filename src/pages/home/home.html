@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ranjith's Reference #5
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label float color="primary">ID</ion-label>
+      <ion-input [(ngModel)]="model.id" placeholder="Enter ID"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label float color="primary">NAME</ion-label>
+      <ion-input [(ngModel)]="model.name" type="tel" placeholder="Enter Name"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-buttons>
+    <button ion-button (click)="goToPageA()">Send value as parameters</button>
+    <button ion-button (click)="goToPageB()">Send value using service</button>
+  </ion-buttons>
+</ion-content>
