@@ -4,7 +4,6 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class SimpleSharing {
   constructor() {
-
   }
   private _model: { id: number, name: string };
   public get model(): { id: number, name: string } {
